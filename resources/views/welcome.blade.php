@@ -2,4 +2,5 @@
 @section('content')
     @include('sections-welcome.hero')
     @include('sections-welcome.about-us')
+    @include('sections-welcome.our-services')
 @endsection
