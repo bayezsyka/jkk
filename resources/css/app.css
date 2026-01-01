@@ -8,4 +8,10 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+    
+    /* Primary Color Palette */
+    --color-primary: #f97316;        /* Orange 500 - Warna utama untuk tombol, aksen */
+    --color-secondary: #0f172a;      /* Slate 900 - Warna gelap untuk teks heading */
+    --color-light: #f1f5f9;          /* Slate 100 - Background terang */
+    --color-accent: #64748b;         /* Slate 500 - Warna teks body */
 }

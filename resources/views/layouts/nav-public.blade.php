@@ -10,16 +10,16 @@
 
             <!-- DESKTOP LINKS (CENTER on TOP, RIGHT on SCROLL) -->
             <div id="navLinks"
-                class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-700 transition-all duration-300">
-                <a href="#home" class="hover:text-slate-900">Home</a>
-                <a href="#about" class="hover:text-slate-900">About</a>
-                <a href="#services" class="hover:text-slate-900">Services</a>
-                <a href="#contact" class="hover:text-slate-900">Contact</a>
+                class="hidden lg:flex items-center gap-8 text-sm font-medium text-white transition-all duration-300">
+                <a href="#home" class="hover:text-white/80">Home</a>
+                <a href="#about" class="hover:text-white/80">About</a>
+                <a href="#services" class="hover:text-white/80">Services</a>
+                <a href="#contact" class="hover:text-white/80">Contact</a>
             </div>
 
             <!-- MOBILE BUTTON (always right) -->
             <button id="menuBtn"
-                class="lg:hidden absolute right-0 rounded-lg p-2 text-slate-700 hover:bg-slate-100 transition"
+                class="lg:hidden absolute right-0 rounded-lg p-2 text-white hover:bg-white/10 transition"
                 aria-label="Menu" aria-expanded="false">
 
                 <svg id="iconHamburger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
@@ -48,9 +48,6 @@
     </div>
 </nav>
 
-<!-- SPACER -->
-<div class="h-16"></div>
-
 <script>
     (function() {
         const navbar = document.getElementById('navbar');
@@ -69,9 +66,20 @@
             // Logo hide
             navLogo.classList.add('hidden');
 
-            // Links ke tengah
-            navLinks.classList.remove('absolute', 'right-0');
-            navLinks.classList.add('absolute', 'left-1/2', '-translate-x-1/2');
+            // Links ke tengah dengan warna putih
+            navLinks.classList.remove('absolute', 'right-0', 'text-slate-700');
+            navLinks.classList.add('absolute', 'left-1/2', '-translate-x-1/2', 'text-white');
+
+            // Update link hover states
+            const links = navLinks.querySelectorAll('a');
+            links.forEach(link => {
+                link.classList.remove('hover:text-slate-900');
+                link.classList.add('hover:text-white/80');
+            });
+
+            // Mobile button warna putih
+            menuBtn.classList.remove('text-slate-700', 'hover:bg-slate-100');
+            menuBtn.classList.add('text-white', 'hover:bg-white/10');
         }
 
         function applyScrolledMode() {
@@ -82,9 +90,20 @@
             // Logo tampil
             navLogo.classList.remove('hidden');
 
-            // Links ke kanan
-            navLinks.classList.remove('left-1/2', '-translate-x-1/2');
-            navLinks.classList.add('absolute', 'right-0');
+            // Links ke kanan dengan warna gelap
+            navLinks.classList.remove('left-1/2', '-translate-x-1/2', 'text-white');
+            navLinks.classList.add('absolute', 'right-0', 'text-slate-700');
+
+            // Update link hover states
+            const links = navLinks.querySelectorAll('a');
+            links.forEach(link => {
+                link.classList.remove('hover:text-white/80');
+                link.classList.add('hover:text-slate-900');
+            });
+
+            // Mobile button warna gelap
+            menuBtn.classList.remove('text-white', 'hover:bg-white/10');
+            menuBtn.classList.add('text-slate-700', 'hover:bg-slate-100');
         }
 
         function setNavbar() {

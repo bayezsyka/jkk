@@ -11,6 +11,7 @@
 <body>
     @include('layouts.nav-public')
     @yield('content')
+    {{-- @include('layouts.bot-public') --}}
 </body>
 
 </html>
