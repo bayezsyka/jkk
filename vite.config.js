@@ -11,8 +11,8 @@ export default defineConfig({
         tailwindcss(),
     ],
     server: {
-        host: '192.168.2.23',
-        port: 8000,
+        host: 'localhost',
+        port: 5173,
         watch: {
             ignored: ['**/storage/framework/views/**'],
         },
