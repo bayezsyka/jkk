@@ -11,13 +11,13 @@
             <!-- DESKTOP LINKS (CENTER on TOP, RIGHT on SCROLL) -->
             <div id="navLinks"
                 class="hidden lg:flex items-center gap-8 text-sm font-medium text-white transition-all duration-300">
-                <a href="#home" class="hover:text-white/80">Home</a>
-                <a href="#about" class="hover:text-white/80">About</a>
-                <a href="#services" class="hover:text-white/80">Services</a>
-                <a href="#contact" class="hover:text-white/80">Contact</a>
+                <a href="/" class="hover:text-white/80">Home</a>
+                <a href="/about" class="hover:text-white/80">About</a>
+                <a href="/services" class="hover:text-white/80">Services</a>
+                <a href="/projects" class="hover:text-white/80">Projects</a>
             </div>
 
-            <!-- MOBILE BUTTON (always right) -->
+            <!-- MOBILE BUTTON (always right)-->
             <button id="menuBtn"
                 class="lg:hidden absolute right-0 rounded-lg p-2 text-white hover:bg-white/10 transition"
                 aria-label="Menu" aria-expanded="false">
@@ -38,10 +38,10 @@
         <div id="mobileMenu" class="hidden lg:hidden pb-4">
             <div class="mt-2 rounded-2xl bg-white/95 p-4 shadow backdrop-blur">
                 <div class="flex flex-col gap-2 text-sm text-slate-700">
-                    <a href="#home" class="rounded-lg px-3 py-2 hover:bg-slate-100">Home</a>
-                    <a href="#about" class="rounded-lg px-3 py-2 hover:bg-slate-100">About</a>
-                    <a href="#services" class="rounded-lg px-3 py-2 hover:bg-slate-100">Services</a>
-                    <a href="#contact" class="rounded-lg px-3 py-2 hover:bg-slate-100">Contact</a>
+                    <a href="/" class="rounded-lg px-3 py-2 hover:bg-slate-100">Home</a>
+                    <a href="/about" class="rounded-lg px-3 py-2 hover:bg-slate-100">About</a>
+                    <a href="/services" class="rounded-lg px-3 py-2 hover:bg-slate-100">Services</a>
+                    <a href="/projects" class="rounded-lg px-3 py-2 hover:bg-slate-100">Projects</a>
                 </div>
             </div>
         </div>
