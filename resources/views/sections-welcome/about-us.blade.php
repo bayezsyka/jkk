@@ -1,5 +1,5 @@
-<section id="about" class="w-full bg-slate-50">
-    <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
+<section id="about" class="w-full bg-white">
+    <div class="mx-auto max-w-4xl px-6 py-16 sm:py-20">
         <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
 
             <!-- KIRI : Gambar -->

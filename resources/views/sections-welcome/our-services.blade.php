@@ -1,5 +1,5 @@
 <section id="services" class="w-full bg-white">
-    <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
+    <div class="mx-auto max-w-4xl px-6 py-16 sm:py-20">
         <!-- Header -->
         <div>
             <p class="text-sm font-semibold tracking-wide text-orange-600">LAYANAN KAMI</p>

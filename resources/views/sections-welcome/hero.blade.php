@@ -25,7 +25,7 @@
 
     <!-- Content -->
     <div class="relative z-10 flex h-full items-center justify-center px-6 text-center">
-        <div class="w-full max-w-3xl">
+        <div class="w-full max-w-4xl">
             <!-- Glass Card -->
             <div
                 class="mx-auto rounded-3xl border border-orange-500/15 bg-white/10 px-6 py-10 shadow-[0_20px_60px_-20px_rgba(0,0,0,0.7)] backdrop-blur-[2px] sm:px-10 sm:py-12">
