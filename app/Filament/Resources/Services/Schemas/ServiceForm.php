@@ -96,6 +96,7 @@ class ServiceForm
                     ->label('Thumbnail')
                     ->image()
                     ->imageEditor()
+                    ->disk('public')
                     ->directory('services/thumbnails')
                     ->visibility('public')
                     ->maxSize(2048)
