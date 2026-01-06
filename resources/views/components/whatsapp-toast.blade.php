@@ -1,15 +1,9 @@
 @php
-    // Ganti nomor WA di sini (format internasional tanpa + dan tanpa spasi), contoh: 6281234567890
-    $waNumber = $waNumber ?? '6281234567890';
-
-    // Pesan default (akan di-urlencode oleh JS)
-    $waMessage = $waMessage ?? 'Halo, saya mau tanya tentang layanan Anda.';
-
-    // Label toast
-    $toastTitle = $toastTitle ?? 'Need Help?';
-    $toastSubtitle = $toastSubtitle ?? 'Chat with us';
-
-    // Opsional: ukuran
+    // Ambil dari config (yang menggunakan .env)
+    $waNumber = config('site.whatsapp.number');
+    $waMessage = config('site.whatsapp.message');
+    $toastTitle = config('site.whatsapp.toast_title');
+    $toastSubtitle = config('site.whatsapp.toast_subtitle');
     $btnSize = $btnSize ?? 64; // px
 @endphp
 
@@ -106,7 +100,7 @@
             // Hover behavior
             fab.addEventListener('mouseenter', showBubble);
             root.addEventListener('mouseleave', () => {
-                // kasih delay dikit biar gak “kedip”
+                // kasih delay dikit biar gak "kedip"
                 setTimeout(() => {
                     if (!root.matches(':hover')) hideBubble();
                 }, 120);

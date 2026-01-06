@@ -79,12 +79,7 @@
 
     @include('layouts.bot-public')
 
-    @include('components.whatsapp-toast', [
-        'waNumber' => '6285161603362',
-        'waMessage' => 'Halo admin, saya mau konsultasi.',
-        'toastTitle' => 'Need Help?',
-        'toastSubtitle' => 'Chat with us',
-    ])
+    @include('components.whatsapp-toast')
 </body>
 
 </html>
